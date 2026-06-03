@@ -1,0 +1,22 @@
+{
+  "name": "iquly-cli",
+  "version": "0.1.2",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "bin": {
+    "iquly": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "node --check dist/index.js && node --check dist/iquly-cli/src/auth.js && node --check dist/iquly-cli/src/auth-commands.js && node --check dist/iquly-cli/src/api.js && node --check dist/iquly-cli/src/push.js",
+    "test:smoke": "node dist/index.js --help"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
