@@ -51,7 +51,7 @@ program.createHelp = () => new IqulyHelp();
 program
     .name("iquly")
     .description("The IQuly CLI helps you build Agents right from the terminal.")
-    .version("0.1.1")
+    .version("0.1.2")
     .showSuggestionAfterError()
     .showHelpAfterError("(run `iquly --help` for usage)");
 program.addHelpText("after", `
